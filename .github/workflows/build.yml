@@ -18,7 +18,7 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleDebug
       - name: Upload result
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-app-file
           path: android/app/build/outputs/apk/debug/app-debug.apk
