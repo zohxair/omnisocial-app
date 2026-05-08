@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Responsive viewport — critical for Capacitor WebView -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- Theme colour matches the dark background used in OmniSocial -->
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Favicon — replace with your actual asset -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- iOS home-screen icon (add your icon files under /public) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- iOS status-bar style when added to home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Prevents iOS from auto-detecting phone numbers as links -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>OmniSocial</title>
+  </head>
+  <body>
+    <!--
+      React mounts here.
+      The `class` attribute is intentionally empty; dark mode is toggled
+      by adding/removing the "dark" class on <html> at runtime.
+    -->
+    <div id="root"></div>
+
+    <!--
+      Vite replaces this with the correct hashed asset path at build time.
+      `type="module"` is required for Vite's ESM dev server and is safe
+      for the Chromium WebView that Capacitor targets.
+    -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
